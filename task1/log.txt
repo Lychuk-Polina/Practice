@@ -1,0 +1,20 @@
+$ git log
+commit b1394d6fc87a5fa5785b349ee04d93365d02b642 (HEAD -> master)
+Author: Lychuk-Polina <lychukpolina@gmail.com>
+Date:   Mon Feb 17 17:51:38 2020 +0300
+
+    first commit
+
+
+
+
+
+
+
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log.txt
+
