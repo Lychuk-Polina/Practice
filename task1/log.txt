@@ -7,11 +7,6 @@ Date:   Mon Feb 17 17:51:38 2020 +0300
 
 
 
-
-
-
-
-
 $ git status
 On branch master
 Changes to be committed:
