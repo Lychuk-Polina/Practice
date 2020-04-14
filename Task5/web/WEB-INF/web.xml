@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>Servlet_Post</servlet-name>
+        <servlet-class>Servlet_Post</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_Post</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Status</servlet-name>
+        <servlet-class>Status</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Status</servlet-name>
+        <url-pattern>/status</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Name</servlet-name>
+        <servlet-class>Name</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Name</servlet-name>
+        <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Page</servlet-name>
+        <servlet-class>Page</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page</servlet-name>
+        <url-pattern>/page</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Test1</servlet-name>
+        <servlet-class>Test1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test1</servlet-name>
+        <url-pattern>/test1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Test2</servlet-name>
+        <servlet-class>Test2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test2</servlet-name>
+        <url-pattern>/test2</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>Filter</filter-name>
+        <filter-class>Filter</filter-class>
+        <init-param>
+            <param-name>active</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter</filter-name>
+        <servlet-name>Servlet_Post</servlet-name>
+        <servlet-name>Name</servlet-name>
+        <servlet-name>Page</servlet-name>
+        <servlet-name>Status</servlet-name>
+        <servlet-name>Test1</servlet-name>
+        <servlet-name>Test2</servlet-name>
+    </filter-mapping>
+</web-app>
