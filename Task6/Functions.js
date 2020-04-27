@@ -202,5 +202,5 @@
     console.log(removePost(100));
 	console.log(" Remove post with id=21:");
 	removePost('21');
-	console.log(posts);  
+	console.log(posts); 
 }());

@@ -14,6 +14,6 @@ for (let i = 1; i <= 20; i++){
         likes: ['Nicki Minaj', 'Rihanna']
 
     };
-   
+
     posts.push(post);
 }
